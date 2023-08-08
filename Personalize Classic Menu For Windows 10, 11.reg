@@ -4,7 +4,7 @@ Windows Registry Editor Version 5.00
 ; Created on: May 14th 2015
 ; Updated on: December 27, 2020
 ; Tutorial: https://www.tenforums.com/tutorials/6051-add-personalize-classic-context-menu-windows-10-a.html
-
+; Collected & Uploaded by Truong Loc
 
 
 [HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization]
