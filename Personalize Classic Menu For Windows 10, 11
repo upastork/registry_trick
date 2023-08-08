@@ -1,0 +1,92 @@
+Windows Registry Editor Version 5.00
+
+; Created by: Shawn Brink
+; Created on: May 14th 2015
+; Updated on: December 27, 2020
+; Tutorial: https://www.tenforums.com/tutorials/6051-add-personalize-classic-context-menu-windows-10-a.html
+
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization]
+"Icon"="themecpl.dll"
+"MUIVerb"="Personalize (classic)"
+"Position"="Bottom"
+"Extended"=-
+"SubCommands"=""
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\001flyout]
+"MUIVerb"="Theme Settings"
+"ControlPanelName"="Microsoft.Personalization"
+"Icon"="themecpl.dll"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\001flyout\command]
+@="explorer shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\002flyout]
+"Icon"="imageres.dll,-110"
+"MUIVerb"="Desktop Background"
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\002flyout\command]
+@="explorer shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921} -Microsoft.Personalization\\pageWallpaper"
+
+[-HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\003flyout]
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\004flyout]
+"Icon"="themecpl.dll"
+"MUIVerb"="Color and Appearance"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\004flyout\command]
+@="explorer shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921} -Microsoft.Personalization\\pageColorization"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\005flyout]
+"Icon"="SndVol.exe,-101"
+"MUIVerb"="Sounds"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\005flyout\command]
+@="rundll32.exe shell32.dll,Control_RunDLL mmsys.cpl,,2"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\006flyout]
+"Icon"="PhotoScreensaver.scr"
+"MUIVerb"="Screen Saver Settings"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\006flyout\command]
+@="rundll32.exe shell32.dll,Control_RunDLL desk.cpl,,1"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\007flyout]
+"Icon"="desk.cpl"
+"MUIVerb"="Desktop Icon Settings"
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\007flyout\command]
+@="rundll32.exe shell32.dll,Control_RunDLL desk.cpl,,0"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\008flyout]
+"Icon"="main.cpl"
+"MUIVerb"="Mouse Pointers"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\008flyout\command]
+@="rundll32.exe shell32.dll,Control_RunDLL main.cpl,,1"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\009flyout]
+"Icon"="taskbarcpl.dll,-1"
+"MUIVerb"="Notification Area Icons"
+"CommandFlags"=dword:00000020
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\009flyout\command]
+@="explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9}"
+
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\010flyout]
+"Icon"="taskbarcpl.dll,-1"
+"MUIVerb"="System Icons"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\Personalization\shell\010flyout\command]
+@="explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9} \\SystemIcons,,0"
