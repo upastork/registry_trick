@@ -5,3 +5,4 @@
 ## 4. [One Drive Tweak](https://github.com/upastork/registry_trick/tree/main/OneDriveTweak)
 - [Thêm OneDrive vào Navigator Panel Windows 10,11](https://github.com/upastork/registry_trick/blob/main/OneDriveTweak/Add_OneDrive_Navigator_Panel_Windows10%2C11.reg)
 - [Gỡ bỏ OneDrive ở Navigator Panel Windows 10,11](https://github.com/upastork/registry_trick/blob/main/OneDriveTweak/Remove_OneDrive_from_Navigation_Pane.reg)
+- [Enable OneDrive (sử dụng khi cài đặt xong mà OneDrive không chạy)](https://github.com/upastork/registry_trick/blob/main/OneDriveTweak/Remove_OneDrive_from_Navigation_Pane.reg)
